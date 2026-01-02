@@ -1,0 +1,150 @@
+
+/* ===== BASE ===== */
+.akul-footer {
+  background-color: #144c2f;
+  padding: 10px 20px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.akul-footer-wrapper {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== BRAND ===== */
+.akul-footer-brand {
+  display: flex;
+  align-items: center;
+  /* gap: 25px; */
+}
+
+.akul-footer-brand img {
+  height: 150px;
+}
+
+.akul-footer-brand h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #d4b483;
+}
+
+/* ===== CONTENT ===== */
+.akul-footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+}
+
+/* ===== ADDRESS ===== */
+.akul-footer-address h3 {
+  color: #d4b483;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.akul-footer-address p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.akul-footer-address span {
+  color: #d4b483;
+  font-weight: 600;
+}
+
+/* ===== SOCIAL ===== */
+.akul-footer-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.akul-footer-social span {
+  font-size: 1.1rem;
+}
+
+.akul-footer-social img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s ease;
+}
+
+.akul-footer-social img:hover {
+  transform: scale(1.15);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .akul-footer-brand h1 {
+    font-size: 2.1rem;
+  }
+
+  .akul-footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .akul-footer-brand {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .akul-footer-brand img {
+    height: 120px;
+  }
+
+  .akul-footer-brand h1 {
+    font-size: 1.9rem;
+  }
+
+  .akul-footer-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .akul-footer-social {
+    justify-content: center;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .akul-footer {
+    padding: 50px 15px;
+  }
+
+  .akul-footer-brand img {
+    height: 95px;
+  }
+
+  .akul-footer-brand h1 {
+    font-size: 1.6rem;
+  }
+
+  .akul-footer-address p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== ULTRA LARGE ===== */
+@media (min-width: 1600px) {
+  .akul-footer-wrapper {
+    max-width: 1600px;
+  }
+
+  .akul-footer-brand h1 {
+    font-size: 3rem;
+  }
+}
