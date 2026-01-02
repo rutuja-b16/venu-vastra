@@ -9,6 +9,7 @@ import duvet from "../../assets/images/blogimages/duvet.jpg";
 import bath from "../../assets/images/Footer/Bath.jpg";
 import bambooterrytowel from "../../assets/images/blogimages/bambooterrytowel.jpg";
 import terrytowel from "../../assets/images/blogimages/terrytowel.jpg";
+import bg from "../../assets/images/HomeImages/back.jpg";
 function Home() {
   useEffect(() => {
     const animateCards = () => {
@@ -55,7 +56,7 @@ function Home() {
         {/* <video autoPlay muted loop playsInline className="hero-video">
           <source src={heroVideo} type="video/mp4" />
         </video> */}
-          <img src="https://i.pinimg.com/1200x/2b/22/b5/2b22b5c0402105701f7027aad9f832b1.jpg" alt="" style={{height:"70%" , width:"100%" , objectFit:"cover" , position:"cover" ,}}/>
+          <img src={bg}alt="" style={{height:"70%" , width:"100%" , objectFit:"cover" , position:"cover" ,}}/>
         {/* ===== HERO TEXT CARD (on video) ===== */}
         <div className="hero-card reveal">
           <div className="hero-card-content">
@@ -86,17 +87,17 @@ function Home() {
             <div className="gallery-item">
               <img src={bedsheet} alt="bedsheet" />
               <h3>Bedsheet</h3>
-              <p>.....</p>
+              <p>Venuvastra Bedsheets: Everyday luxury, comfort, and timeless elegance woven perfectly.</p>
             </div>
             <div className="gallery-item">
               <img src={bambootowel} alt="bambootowel" />
               <h3>Bamboo Towel</h3>
-              <p>...</p>
+              <p>Venuvastra Bamboo Towel: Luxury, performance, and sustainability in perfect balance.</p>
             </div>
             <div className="gallery-item">
               <img src={bath} alt="bath towel" />
               <h3>Bath Towel</h3>
-              <p>...</p>
+              <p>Venuvastra Cotton Towels: Soft, sustainable luxury for conscious living.</p>
             </div>
             <div className="gallery-item">
               <img src={duvet} alt="Duvet covers" />

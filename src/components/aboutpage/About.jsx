@@ -5,7 +5,7 @@ import { useEffect } from "react";
 // Image imports
 import bg from "../../assets/images/AboutImages/bg.jpg";
 import neha from "../../assets/images/AboutImages/neha.jpg";
-import visionImg from "../../assets/images/AboutImages/vission.jpg";
+import visionImg from "../../assets/images/AboutImages/vision.jpg";
 import missionImg from "../../assets/images/AboutImages/mission.jpg";
 import qualityImg from "../../assets/images/Footer/Hand.jpg";
 import pankaj from "../../assets/images/AboutImages/pankaj.jpg";
@@ -154,8 +154,6 @@ function About() {
     </div>
   </div>
 </section>
-
-
 
       {/* VISION / MISSION / QUALITY (same grid style as reference) */}
       <section className="about-pillars">
