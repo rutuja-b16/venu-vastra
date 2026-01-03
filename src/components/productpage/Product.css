@@ -1,0 +1,56 @@
+/* PAGE CONTAINER */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+/* PAGE TITLE */
+.container h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f3d2b;
+  margin-bottom: 40px;
+}
+
+/* FORCE GRID LAYOUT (override bootstrap row) */
+.row.g-4 {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+/* ULTRA SMALL / MOBILE */
+@media (min-width: 360px) {
+  .row.g-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* SMALL TABLET */
+@media (min-width: 600px) {
+  .row.g-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* TABLET / LAPTOP */
+@media (min-width: 992px) {
+  .row.g-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1400px) {
+  .row.g-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* REMOVE BOOTSTRAP COLUMN WIDTH EFFECT */
+.row.g-4 > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
