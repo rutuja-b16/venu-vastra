@@ -6,7 +6,7 @@ import bedsheet from "../../assets/images/Footer/bedsheet.jpg";
 import comforters from "../../assets/images/blogimages/comforters.jpg";
 import bambootowel from "../../assets/images/blogimages/bambootowel.jpg";
 import duvet from "../../assets/images/blogimages/duvet.jpg";
-import bath from "../../assets/images/Footer/Bath.jpg";
+import bath from "../../assets/images/Footer/bath.jpg";
 import bambooterrytowel from "../../assets/images/blogimages/bambooterrytowel.jpg";
 import terrytowel from "../../assets/images/blogimages/terrytowel.jpg";
 import bg from "../../assets/images/HomeImages/back.jpg";
@@ -104,11 +104,7 @@ function Home() {
               <h3>Duvet Covers</h3>
               <p>Premium comfort, durability, and elegance for homes and hospitality.</p>
             </div>
-            {/* <div className="gallery-item">
-              <img src={comforters} alt="comforters" />
-              <h3>Comforters</h3>
-              <p></p>
-            </div> */}
+          
             <div className="gallery-item">
               <img src={bambooterrytowel} alt="Onion" />
               <h3>Bamboo Terry Towel</h3>
