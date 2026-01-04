@@ -64,7 +64,8 @@ function Home() {
             <p className="hero-card-subtitle">
               Experience premium quality textiles inspired by nature’s finest.
             </p>
-           <a href="/product"><button className="hero-card-btn">Our Products</button></a> 
+           <a href="/blog"><button className="hero-card-btn">Learn More</button></a> 
+          
           </div>
         </div>
       </div>

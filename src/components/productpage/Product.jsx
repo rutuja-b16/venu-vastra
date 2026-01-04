@@ -89,7 +89,7 @@ function Product() {
         <p>No products found</p>
       )}
 
-      <div className="row g-4">
+      <div className="product-grid">
         {filteredProducts.map((product) => (
           <div key={product._id} className="col-md-4 col-lg-3">
             <ProductCard product={product} />

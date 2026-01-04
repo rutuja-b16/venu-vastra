@@ -12,25 +12,25 @@ import pankaj from "../../assets/images/AboutImages/pankaj.jpg";
 
 function About() {
   useEffect(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-show");
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-show");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
 
-  const animatedElements = document.querySelectorAll(
-    ".fade-in, .fade-up, .slide-left, .slide-right, .zoom-in"
-  );
+    const animatedElements = document.querySelectorAll(
+      ".fade-in, .fade-up, .slide-left, .slide-right, .zoom-in"
+    );
 
-  animatedElements.forEach((el) => observer.observe(el));
+    animatedElements.forEach((el) => observer.observe(el));
 
-  return () => observer.disconnect();
-}, []);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="about-page">
@@ -67,93 +67,98 @@ function About() {
       </section>
 
       {/* OUR STORY */}
-<section className="our-story-section fade-up">
-  <h2 className="our-story-title">Our Story</h2>
+      <section className="our-story-section fade-up">
+        <h2 className="our-story-title">Our Story</h2>
 
-  <p className="our-story-text">
-    {/* Established in 1970, */}
-     Venu-vastra is an Indian manufacturer and
-    exporter of premium high-quality towels. We craft an extensive range of
-    products including cotton towels, bathrobes, bedsheets, Duvet Covers, Hand towel, kitchen apparel, children’s
-    bibs, gloves,poncho towels,bath towels,Comforters personalized embroidered towels,
-    woven-logo towels, bleach-proof towels, towel bouquets, and gift packs.
-  </p>
+        <p className="our-story-text">
+          {/* Established in 1970, */}
+          Venuvastra is an Indian manufacturer and exporter of premium
+          high-quality towels. We craft an extensive range of products including
+          bamboo towels, terry towel, cotton towels, bathrobes, bedsheets, Duvet
+          Covers, Hand towel, kitchen apparel, children’s bibs, gloves,poncho
+          towels,bath towels,Comforters personalized embroidered towels,
+          woven-logo towels, bleach-proof towels, towel bouquets, and gift
+          packs.
+        </p>
 
-  <p className="our-story-text">
-    Our towels are produced using 100% bamboo, combed and carded fibers,
-    zero-twist technology, and sustainable blends including modal, tencel,
-    bamboo, and cotton-polyester. Every product reflects our commitment to
-    comfort, durability, and responsible manufacturing.
-  </p>
-</section>
+        <p className="our-story-text">
+          Our towels are made using bamboo fibers and
+          zero-twist technology. We use eco-friendly blends such as modal,
+          tencel, bamboo, and cotton-polyester. Each product is designed to
+          provide softness, long-lasting quality, and environmentally
+          responsible production.
+        </p>
+      </section>
 
-{/* why our terry towel */}
-    <section className="towel-features-section fade-in">
-  <h2 className="features-title">Why Our Terry Towels Stand Out</h2>
-  <p className="features-subtitle">
-    Crafted for comfort, durability, and luxury – trusted by hospitality,
-    wellness, and retail industries worldwide.
-  </p>
+      {/* why our terry towel */}
+      <section className="towel-features-section fade-in">
+        <h2 className="features-title">Why Our Terry Towels Stand Out</h2>
+        <p className="features-subtitle">
+          Crafted for comfort, durability, and luxury – trusted by hospitality,
+          wellness, and retail industries worldwide.
+        </p>
 
-  <div className="features-grid">
-    <div className="feature-card zoom-in">
-      <div className="feature-icon">🌱</div>
-      <h3>Premium Cotton</h3>
-      <p>
-        Made from high-quality cotton for unmatched softness and long-lasting
-        absorbency.
-      </p>
-    </div>
+        <div className="features-grid">
+          <div className="feature-card zoom-in">
+            <div className="feature-icon">🌱</div>
+            <h3>Premium Cotton</h3>
+            <p>
+              Made from high-quality cotton for unmatched softness and
+              long-lasting absorbency.
+            </p>
+          </div>
 
-    <div className="feature-card zoom-in">
-      <div className="feature-icon">💧</div>
-      <h3>Superior Absorbency</h3>
-      <p>
-        Engineered with dense loops for maximum water absorption and quick
-        drying.
-      </p>
-    </div>
+          <div className="feature-card zoom-in">
+            <div className="feature-icon">💧</div>
+            <h3>Superior Absorbency</h3>
+            <p>
+              Engineered with dense loops for maximum water absorption and quick
+              drying.
+            </p>
+          </div>
 
-    <div className="feature-card zoom-in">
-      <div className="feature-icon">🏭</div>
-      <h3>Versatile Range</h3>
-      <p>
-        Available in bath, hand, and face towels to meet diverse industry
-        needs.
-      </p>
-    </div>
+          <div className="feature-card zoom-in">
+            <div className="feature-icon">🏭</div>
+            <h3>Versatile Range</h3>
+            <p>
+              Available in bath, hand, and face towels to meet diverse industry
+              needs.
+            </p>
+          </div>
 
-    <div className="feature-card zoom-in">
-      <div className="feature-icon">🏨</div>
-      <h3>Export Quality</h3>
-      <p>
-        Trusted by hotels, spas, and retailers with export-grade finishing and
-        packaging.
-      </p>
-    </div>
-  </div>
-</section>
+          <div className="feature-card zoom-in">
+            <div className="feature-icon">🏨</div>
+            <h3>Export Quality</h3>
+            <p>
+              Trusted by hotels, spas, and retailers with export-grade finishing
+              and packaging.
+            </p>
+          </div>
+        </div>
+      </section>
 
-{/* MEET THE TEAM */}
-<section className="team-section fade-in">
-  <h2 className="team-title">Meet the Team</h2>
-  <div className="team-container"> {/* ← Only change: rename class to avoid grid */}  
-    <div className="team-card zoom-in">
-      <img src={neha} alt="neha kale" />
-      <div className="team-info">
-        <h3>Neha Kale</h3>
-        <span>Founder</span>
-      </div>
-    </div>
-    <div className="team-card zoom-in">
-      <img src={pankaj} alt="pankaj deshmukh" />
-      <div className="team-info">
-        <h3>Pankaj Deshmukh</h3>
-        <span>Director</span>
-      </div>
-    </div>
-  </div>
-</section>
+      {/* MEET THE TEAM */}
+      <section className="team-section fade-in">
+        <h2 className="team-title">Meet the Team</h2>
+        <div className="team-container">
+          {" "}
+          {/* ← Only change: rename class to avoid grid */}
+          <div className="team-card zoom-in">
+            <img src={neha} alt="neha kale" />
+            <div className="team-info">
+              <h3>Neha Kale</h3>
+              <span>Founder</span>
+            </div>
+          </div>
+          <div className="team-card zoom-in">
+            <img src={pankaj} alt="pankaj deshmukh" />
+            <div className="team-info">
+              <h3>Pankaj Deshmukh</h3>
+              <span>Director</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* VISION / MISSION / QUALITY (same grid style as reference) */}
       <section className="about-pillars">

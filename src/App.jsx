@@ -7,6 +7,8 @@ import Blog from './components/blogpage/Blog.jsx'
 import Contact from './components/contactpage/Contact.jsx'
 import About from './components/aboutpage/About.jsx'
 import Footer from './components/FooterComponent/footer.jsx'
+import WhatsAppButton from './components/Whatsapp/WhatsAppButton.jsx'
+import CallButton from './components/Calls/CallButton.jsx'
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/products" element={<Product />} /> */}
-
+     
         </Routes>
+             <WhatsAppButton/>
+             <CallButton/>
         <Footer/>
         </main>
         

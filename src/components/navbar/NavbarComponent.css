@@ -13,7 +13,7 @@
 html,
 body {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   overflow-x: hidden; /* keep horizontal stable */
   font-family: "Segoe UI", sans-serif;
 }
@@ -58,10 +58,10 @@ body {
 }
 
 .brand-text {
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
   font-size: 25px;
-  font-weight:700;
-  color: #2E5D42;
+  font-weight: 700;
+  color: #2e5d42;
   letter-spacing: 0.5px;
   white-space: nowrap;
 }
@@ -70,10 +70,10 @@ body {
 .nav-brand img {
   height: 100px;
   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
-/* filter: drop-shadow(0 4px 8px #d6b47c (0, 0, 0, 0.3)); */
+  /* filter: drop-shadow(0 4px 8px #d6b47c (0, 0, 0, 0.3)); */
   filter: drop-shadow(0 4px 8px rgba(251, 211, 147, 0.6));
 }
-.nav-brand img{
+.nav-brand img {
   /* Visual size increase (navbar unaffected) */
   transform: scale(1.5);
 
@@ -168,15 +168,14 @@ body {
 
   transition: color 0.3s;
 }
-
 .contact-item span {
   transition: color 0.3s;
+  font-family: sans-serif;
 }
 
 .contact-item:hover i,
 .contact-item:hover span {
   color: var(--brand-color);
-
 }
 
 /* ================= DROPDOWN ================= */
@@ -202,7 +201,7 @@ body {
   visibility: hidden;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   z-index: 3000; /* ✅ visible above everything */
 }
 
@@ -252,12 +251,10 @@ body {
   width: 26px;
   height: 2px;
   background: var(--brand-dark);
-  
 }
 
 /* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
-
   .top-bar {
     padding: 12px 20px;
     font-size: 14px;
@@ -422,7 +419,6 @@ body {
 }
 /* ================= TABLET FIX (iPad, iPad Air, iPad Pro Portrait) ================= */
 @media (max-width: 1024px) {
-
   .menu-toggle {
     display: flex;
     position: absolute;

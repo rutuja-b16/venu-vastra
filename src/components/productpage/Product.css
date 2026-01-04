@@ -1,56 +1,71 @@
-/* PAGE CONTAINER */
+/* ================= PAGE CONTAINER ================= */
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 16px;
+  padding: 32px 16px;
+  overflow-x: hidden;
 }
 
-/* PAGE TITLE */
+/* TITLE */
 .container h3 {
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   color: #1f3d2b;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
-/* FORCE GRID LAYOUT (override bootstrap row) */
-.row.g-4 {
-  display: grid !important;
-  grid-template-columns: repeat(1, 1fr);
+/* ================= PRODUCT GRID ================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  justify-items: center; /* 🔑 center cards like Vision */
 }
 
-/* ULTRA SMALL / MOBILE */
-@media (min-width: 360px) {
-  .row.g-4 {
-    grid-template-columns: repeat(1, 1fr);
-  }
+/* EACH CARD COLUMN */
+.product-grid > div {
+  width: 100%;
+  /* 🔑 SAME size everywhere */
+  max-width: 360px; 
 }
 
-/* SMALL TABLET */
-@media (min-width: 600px) {
-  .row.g-4 {
+/* ================= RESPONSIVE ================= */
+
+/* Medium screens */
+@media (max-width: 1200px) {
+  .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* TABLET / LAPTOP */
-@media (min-width: 992px) {
-  .row.g-4 {
-    grid-template-columns: repeat(3, 1fr);
+/* Tablets */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* LARGE DESKTOP */
-@media (min-width: 1400px) {
-  .row.g-4 {
-    grid-template-columns: repeat(4, 1fr);
+/* Mobile & ultra-small */
+@media (max-width: 576px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .product-grid > div {
+    max-width: 100%; /* 🔑 full width card */
+  }
+
+   /* 🔑 CENTER CARD + SAFE SPACE FOR WHATSAPP */
+  .product-card {
+    width: 100%;
+    max-width: 360px;   /* 👈 center look like 2nd image */
+    margin: 0 auto;
+    /* 👈 WhatsApp overlap fix */
+    padding-right: 56px; 
   }
 }
-
-/* REMOVE BOOTSTRAP COLUMN WIDTH EFFECT */
-.row.g-4 > div {
-  width: 100% !important;
-  max-width: 100% !important;
-}
+ 
