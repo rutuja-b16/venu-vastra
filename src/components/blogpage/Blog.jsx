@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Blog.css";
 
 /* HERO IMAGE */
-import bambooHero from "../../assets/images/blogimages/bamboo .jpg";
+import bambooHero from "../../assets/images/blogimages/bamboo.jpg";
 
 /* EXISTING IMAGES */
 import hand from "../../assets/images/Footer/Hand.png";

@@ -7,9 +7,10 @@ import comforters from "../../assets/images/blogimages/comforters.jpg";
 import bambootowel from "../../assets/images/blogimages/bambootowel.jpg";
 import duvet from "../../assets/images/blogimages/duvet.jpg";
 import bath from "../../assets/images/Footer/bath.jpg";
-import bambooterrytowel from "../../assets/images/blogimages/bambooterrytowel.jpg";
+import bambooterrytowel from "../../assets/images/blogimages/Bambooterrytowel.jpg";
 import terrytowel from "../../assets/images/blogimages/terrytowel.jpg";
 import bg from "../../assets/images/HomeImages/back.jpg";
+
 function Home() {
   useEffect(() => {
     const animateCards = () => {
