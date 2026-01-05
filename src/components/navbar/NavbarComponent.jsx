@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./NavbarComponent.css";
+import venuLogo from "../../assets/images/logo/venuLogo.png";
+
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,7 +96,7 @@ const NavbarComponent = () => {
         {/* LOGO */}
         <div className="nav-brand">
           <img
-            src="src/assets/images/logo/venuLogo.png"
+            src={venuLogo}
             alt="VENUVASTRA"
             className="logo"
           />
@@ -177,8 +179,6 @@ const NavbarComponent = () => {
     <span>venuvastra@gmail.com</span>
   </div>
 </li>
-
-
 
         </ul>
         {/* CONTACT */}
