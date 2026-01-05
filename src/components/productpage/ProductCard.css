@@ -6,7 +6,7 @@
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
   padding: 16px;
 
-  /* 🔑 HARD SIZE LOCK */
+  /*  HARD SIZE LOCK */
   height: 520px;
   display: flex;
   flex-direction: column;
@@ -101,7 +101,7 @@ overflow: hidden;
 /* ATTRIBUTES FIXED BOTTOM */
 .product-attrs {
   margin-top: auto;
-  padding-top: 6px;   /* 👈 very small */
+  padding-top: 6px;   /*  very small */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

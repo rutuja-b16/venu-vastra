@@ -41,10 +41,12 @@ body {
 
 /* ================= MAIN NAV ================= */
 .main-nav {
+  height: 90px;
+  min-height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 20px;
   background: var(--bg-light);
   position: relative;
   z-index: 1000;
@@ -54,7 +56,8 @@ body {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 5px; /* Space between logo and text */
+  gap: 25px; /* Space between logo and text*/
+  height: 100%;
 }
 
 .brand-text {
@@ -68,21 +71,28 @@ body {
 
 /* ================= LOGO ================= */
 .nav-brand img {
-  height: 100px;
-  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
-  /* filter: drop-shadow(0 4px 8px #d6b47c (0, 0, 0, 0.3)); */
+  height: 80px;
+  transform: scale(1.5);  
+  transform-origin: left center;
+  pointer-events: none;
   filter: drop-shadow(0 4px 8px rgba(251, 211, 147, 0.6));
 }
-.nav-brand img {
+
+
+
+/* .nav-brand img { */
   /* Visual size increase (navbar unaffected) */
-  transform: scale(1.5);
+  /* transform: scale(1.5); */
 
   /* Smooth zoom animation */
-  animation: logoZoom 3s ease-in-out infinite;
-}
+  /* animation: logoZoom 3s ease-in-out infinite; */
+/* } */
+
+
 
 /* Zoom in & out animation */
-@keyframes logoZoom {
+
+/* @keyframes logoZoom {
   0% {
     transform: scale(1.45);
   }
@@ -92,13 +102,13 @@ body {
   100% {
     transform: scale(1.45);
   }
-}
+} */
 
 /* Hover effect */
-.nav-brand-img :hover {
+/* .nav-brand-img :hover {
   animation-play-state: paused;
   transform: scale(1.7);
-}
+} */
 
 /* ================= MENU LINKS ================= */
 .nav-links {
@@ -482,4 +492,38 @@ body {
     z-index: 1000;
     background: var(--bg-light);
   }
+}
+
+ /* ............................... */
+.mobile-contact {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav-contact {
+    display: none; /* hide desktop contact */
+  }
+
+  .mobile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(46, 93, 66, 0.2);
+  }
+
+  .mobile-contact .contact-item {
+    font-size: 15px;
+    color: var(--brand-dark);
+  }
+}
+
+.nav-links {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.nav-links {
+  overflow-y: auto;
 }

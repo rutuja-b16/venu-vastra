@@ -22,7 +22,7 @@ function App() {
           <Route path="/products/:category" element={<Product />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/products" element={<Product />} /> */}
+          
      
         </Routes>
              <WhatsAppButton/>

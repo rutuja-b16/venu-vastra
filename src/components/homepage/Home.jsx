@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 // import heroVideo from "/src/assets/images/HomeImages/hero-video.mp4";
-import hand from "../../assets/images/Footer/Hand.jpg";
+import hand from "../../assets/images/Footer/Hand.png";
 import bedsheet from "../../assets/images/Footer/bedsheet.jpg";
 import comforters from "../../assets/images/blogimages/comforters.jpg";
 import bambootowel from "../../assets/images/blogimages/bambootowel.jpg";

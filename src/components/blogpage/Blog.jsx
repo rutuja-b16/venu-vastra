@@ -5,7 +5,7 @@ import "./Blog.css";
 import bambooHero from "../../assets/images/blogimages/bamboo .jpg";
 
 /* EXISTING IMAGES */
-import hand from "../../assets/images/Footer/Hand.jpg";
+import hand from "../../assets/images/Footer/Hand.png";
 import bambootowel from "../../assets/images/blogimages/bambootowel.jpg";
 import comforters from "../../assets/images/blogimages/comforters.jpg";
 import bath from "../../assets/images/Footer/bath.jpg";

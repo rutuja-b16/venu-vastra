@@ -1,6 +1,6 @@
 import React from "react";
 import "./CallButton.css";
-import callIcon from "../../assets/images/CallImage/call.png";// phone icon
+import callIcon from "../../assets/images/CallImage/calling.png";// phone icon
 
 const CallButton = () => {
   const phoneNumber = "+919156194055"; // your number

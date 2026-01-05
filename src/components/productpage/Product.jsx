@@ -46,15 +46,6 @@ function Product() {
     }
   };
 
-  /* ================= CATEGORY MATCH ================= */
-
-  // const activeCategory = useMemo(() => {
-  //   return categories.find(
-  //     (c) =>
-  //       c.slug === category ||
-  //       c.name?.toLowerCase().replace(/\s+/g, "-") === category
-  //   );
-  // }, [categories, category]);
 
   const activeCategory = useMemo(() => {
   return categories.find(

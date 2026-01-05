@@ -22,7 +22,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
-  justify-items: center; /* 🔑 center cards like Vision */
+  justify-items: center; /*  center cards like Vision */
 }
 
 /* EACH CARD COLUMN */
@@ -56,16 +56,15 @@
   }
 
   .product-grid > div {
-    max-width: 100%; /* 🔑 full width card */
+    max-width: 100%; /*  full width card */
   }
 
-   /* 🔑 CENTER CARD + SAFE SPACE FOR WHATSAPP */
+   /*  CENTER CARD + SAFE SPACE FOR WHATSAPP */
   .product-card {
     width: 100%;
-    max-width: 360px;   /* 👈 center look like 2nd image */
+    max-width: 360px;   /* center look like 2nd image */
     margin: 0 auto;
-    /* 👈 WhatsApp overlap fix */
-    padding-right: 56px; 
+    
   }
 }
  

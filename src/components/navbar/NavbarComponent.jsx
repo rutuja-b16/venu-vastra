@@ -161,8 +161,26 @@ const NavbarComponent = () => {
               Contact
             </Link>
           </li>
-        </ul>
 
+              {/* ===== MOBILE CONTACT ONLY ===== */}
+<li className="mobile-contact">
+  <div className="contact-item">
+    <i className="ri-phone-line"></i>
+    <span>+91 9156194055</span>
+  </div>
+  <div className="contact-item">
+    <i className="ri-phone-line"></i>
+    <span>+91 9881719988</span>
+  </div>
+  <div className="contact-item">
+    <i className="ri-mail-fill"></i>
+    <span>venuvastra@gmail.com</span>
+  </div>
+</li>
+
+
+
+        </ul>
         {/* CONTACT */}
         <div className="nav-contact">
           <div className="contact-item">
