@@ -72,23 +72,19 @@ body {
 /* ================= LOGO ================= */
 .nav-brand img {
   height: 80px;
-  transform: scale(1.5);  
+  transform: scale(1.5);
   transform-origin: left center;
   pointer-events: none;
   filter: drop-shadow(0 4px 8px rgba(251, 211, 147, 0.6));
 }
 
-
-
 /* .nav-brand img { */
-  /* Visual size increase (navbar unaffected) */
-  /* transform: scale(1.5); */
+/* Visual size increase (navbar unaffected) */
+/* transform: scale(1.5); */
 
-  /* Smooth zoom animation */
-  /* animation: logoZoom 3s ease-in-out infinite; */
+/* Smooth zoom animation */
+/* animation: logoZoom 3s ease-in-out infinite; */
 /* } */
-
-
 
 /* Zoom in & out animation */
 
@@ -112,11 +108,13 @@ body {
 
 /* ================= MENU LINKS ================= */
 .nav-links {
+  padding: 0px 10px;
   list-style: none;
   display: flex;
   gap: 36px;
   align-items: center;
   overflow: visible; /* ✅ dropdown visible on desktop */
+  position: relative; 
 }
 
 .nav-links a,
@@ -323,7 +321,6 @@ body {
     display: block;
     width: 250px;
     height: 150px;
-    background: url("src/assets/images/logo/venuLogo.png") no-repeat center;
     background-size: contain;
     /* margin-bottom: 25px; */
   }
@@ -494,7 +491,7 @@ body {
   }
 }
 
- /* ............................... */
+/* ............................... */
 .mobile-contact {
   display: none;
 }
@@ -519,11 +516,3 @@ body {
   }
 }
 
-.nav-links {
-  height: 100vh;
-  overflow-y: auto;
-}
-
-.nav-links {
-  overflow-y: auto;
-}

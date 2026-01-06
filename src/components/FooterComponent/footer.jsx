@@ -61,7 +61,7 @@ function Footer() {
             </p>
              <p>
               <span>websites: </span>www.venuvastra.com
-              <br></br>wwww.akulenterprises.com
+              <br></br>www.akulenterprises.com
             </p>
           </div>
         </div>

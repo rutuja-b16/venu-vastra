@@ -10,6 +10,7 @@ import bath from "../../assets/images/Footer/bath.jpg";
 import bambooterrytowel from "../../assets/images/blogimages/Bambooterrytowel.jpg";
 import terrytowel from "../../assets/images/blogimages/terrytowel.jpg";
 import bg from "../../assets/images/HomeImages/back.jpg";
+import { Link, NavLink } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -57,7 +58,16 @@ function Home() {
         {/* <video autoPlay muted loop playsInline className="hero-video">
           <source src={heroVideo} type="video/mp4" />
         </video> */}
-          <img src={bg}alt="" style={{height:"70%" , width:"100%" , objectFit:"cover" , position:"cover" ,}}/>
+        <img
+          src={bg}
+          alt=""
+          style={{
+            height: "70%",
+            width: "100%",
+            objectFit: "cover",
+            position: "cover",
+          }}
+        />
         {/* ===== HERO TEXT CARD (on video) ===== */}
         <div className="hero-card reveal">
           <div className="hero-card-content">
@@ -65,8 +75,10 @@ function Home() {
             <p className="hero-card-subtitle">
               Experience premium quality textiles inspired by nature’s finest.
             </p>
-           <a href="/blog"><button className="hero-card-btn">Learn More</button></a> 
-          
+            {/* <a href="/blog"><button className="hero-card-btn">Learn More</button></a>  */}
+            <NavLink to="/blog">
+              <button className="hero-card-btn">Learn More</button>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -84,43 +96,63 @@ function Home() {
             <div className="gallery-item">
               <img src={comforters} alt="comforter" />
               <h3>Comforters</h3>
-              <p>Warmth, comfort, and luxury—crafted to elevate every sleep experience. </p>
+              <p>
+                Warmth, comfort, and luxury—crafted to elevate every sleep
+                experience.{" "}
+              </p>
             </div>
             <div className="gallery-item">
               <img src={bedsheet} alt="bedsheet" />
               <h3>Bedsheet</h3>
-              <p>Venuvastra Bedsheets: Everyday luxury, comfort, and timeless elegance woven perfectly.</p>
+              <p>
+                Venuvastra Bedsheets: Everyday luxury, comfort, and timeless
+                elegance woven perfectly.
+              </p>
             </div>
             <div className="gallery-item">
               <img src={bambootowel} alt="bambootowel" />
               <h3>Bamboo Towel</h3>
-              <p>Venuvastra Bamboo Towel: Luxury, performance, and sustainability in perfect balance.</p>
+              <p>
+                Venuvastra Bamboo Towel: Luxury, performance, and sustainability
+                in perfect balance.
+              </p>
             </div>
             <div className="gallery-item">
               <img src={bath} alt="bath towel" />
               <h3>Bath Towel</h3>
-              <p>Venuvastra Cotton Towels: Soft, sustainable luxury for conscious living.</p>
+              <p>
+                Venuvastra Cotton Towels: Soft, sustainable luxury for conscious
+                living.
+              </p>
             </div>
             <div className="gallery-item">
               <img src={duvet} alt="Duvet covers" />
               <h3>Duvet Covers</h3>
-              <p>Premium comfort, durability, and elegance for homes and hospitality.</p>
+              <p>
+                Premium comfort, durability, and elegance for homes and
+                hospitality.
+              </p>
             </div>
-          
+
             <div className="gallery-item">
               <img src={bambooterrytowel} alt="Onion" />
               <h3>Bamboo Terry Towel</h3>
-              <p>Hotel-grade comfort, eco-friendly softness, and export-quality durability.. </p>
+              <p>
+                Hotel-grade comfort, eco-friendly softness, and export-quality
+                durability..{" "}
+              </p>
             </div>
             <div className="gallery-item">
               <img src={terrytowel} alt="Spices" />
               <h3>Terry Towel</h3>
-              <p>Elegant comfort, sustainable luxury, and high-performance everyday use.</p>
+              <p>
+                Elegant comfort, sustainable luxury, and high-performance
+                everyday use.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* Product Cards Section */}
       <div className="product-cards-section">
@@ -140,7 +172,10 @@ function Home() {
               Luxuriously soft and absorbent, perfect for your post-shower
               experience.
             </p>
-          <a href="blog"> <button className="learn-more-btn">Learn More</button></a> 
+            <a href="blog">
+              {" "}
+              <button className="learn-more-btn">Learn More</button>
+            </a>
           </div>
 
           {/* Card 2: Bed Sheets */}
@@ -155,7 +190,10 @@ function Home() {
             </div>
             <h3>Bed Sheets</h3>
             <p>Compact and soft, ideal for quick drying and daily use.</p>
-          <a href="blog"> <button className="learn-more-btn">Learn More</button></a> 
+            <a href="blog">
+              {" "}
+              <button className="learn-more-btn">Learn More</button>
+            </a>
           </div>
 
           {/* Card 3: Bamboo Towels */}
@@ -173,7 +211,10 @@ function Home() {
               Naturally antibacterial & eco-friendly. Softness that hugs your
               skin like nature intended.
             </p>
-           <a href="blog"> <button className="learn-more-btn">Learn More</button></a>
+            <a href="blog">
+              {" "}
+              <button className="learn-more-btn">Learn More</button>
+            </a>
           </div>
 
           {/* Card 4: Hand Towels */}
@@ -191,7 +232,9 @@ function Home() {
               Perfectly sized for everyday use — gentle on hands, luxurious in
               feel.
             </p>
-            <a href="blog"><button className="learn-more-btn">Learn More</button></a>
+            <a href="blog">
+              <button className="learn-more-btn">Learn More</button>
+            </a>
           </div>
 
           {/* Card 5: Comforters */}
@@ -209,7 +252,9 @@ function Home() {
               Plush, breathable, and designed for cozy nights. Wraps you in
               cloud-like comfort.
             </p>
-            <a href="blog"><button className="learn-more-btn">Learn More</button></a>
+            <a href="blog">
+              <button className="learn-more-btn">Learn More</button>
+            </a>
           </div>
 
           {/* Card 6: Duvet Covers */}
@@ -227,7 +272,9 @@ function Home() {
               Elegant, easy-care covers that transform your bed into a sanctuary
               of style and comfort.
             </p>
-           <a href="blog"><button className="learn-more-btn">Learn More</button></a> 
+            <a href="blog">
+              <button className="learn-more-btn">Learn More</button>
+            </a>
           </div>
         </div>
       </div>
