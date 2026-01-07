@@ -34,7 +34,7 @@ function About() {
 
   return (
     <div className="about-page">
-      {/* HERO (same as reference top section) */}
+      {/* HERO */}
       <section className="about-hero zoom-in">
         <img src={bg} alt="About Us" />
         <div className="about-hero-overlay">
@@ -71,20 +71,20 @@ function About() {
         <h2 className="our-story-title">Our Story</h2>
 
         <p className="our-story-text">
-          {/* Established in 1970, */}
+         
           Venuvastra is an Indian manufacturer and exporter of premium
           high-quality towels. We craft an extensive range of products including
-          bamboo towels, terry towel, cotton towels, bathrobes, bedsheets, Duvet
-          Covers, Hand towel, kitchen apparel, children’s bibs, gloves,poncho
-          towels,bath towels,Comforters personalized embroidered towels,
-          woven-logo towels, bleach-proof towels, towel bouquets, and gift
+          Bamboo Terry Towel, 100% Cotton Towels, Bathrobes, Bedsheets, Duvet
+          Covers, Hand towel, Kitchen apparel, Children’s Bibs, Gloves, Poncho
+          towels,Bath towels,Comforters, Personalized Embroidered towels,
+          Woven-logo Towels, Bleach-proof towels, Towel Bouquets, and Gift
           packs.
         </p>
 
         <p className="our-story-text">
           Our towels are made using bamboo fibers and
           zero-twist technology. We use eco-friendly blends such as modal,
-          tencel, bamboo, and cotton-polyester. Each product is designed to
+          tencel, Bamboo, and cotton-polyester. Each product is designed to
           provide softness, long-lasting quality, and environmentally
           responsible production.
         </p>
@@ -142,7 +142,7 @@ function About() {
         <h2 className="team-title">Meet the Team</h2>
         <div className="team-container">
           {" "}
-          {/* ← Only change: rename class to avoid grid */}
+        
           <div className="team-card zoom-in">
             <img src={neha} alt="neha kale" />
             <div className="team-info">
@@ -160,7 +160,7 @@ function About() {
         </div>
       </section>
 
-      {/* VISION / MISSION / QUALITY (same grid style as reference) */}
+      {/* VISION / MISSION / QUALITY  */}
       <section className="about-pillars">
         <div className="pillar-card fade-up hover-card">
           <img src={visionImg} alt="Vision" />
@@ -190,7 +190,7 @@ function About() {
         </div>
       </section>
 
-      {/* CLOSING SECTION (same feel as reference bottom section) */}
+      {/* CLOSING SECTION */}
       <section className="about-closing fade-in">
         <h2>Driven by Trust. Defined by Quality.</h2>
         <p>

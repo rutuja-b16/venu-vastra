@@ -28,7 +28,7 @@
 /* EACH CARD COLUMN */
 .product-grid > div {
   width: 100%;
-  /* 🔑 SAME size everywhere */
+  /*  SAME size everywhere */
   max-width: 360px; 
 }
 

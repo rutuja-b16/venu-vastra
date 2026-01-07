@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./NavbarComponent.css";
 import venuLogo from "../../assets/images/logo/venuLogo.png";
-
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,46 +59,47 @@ const NavbarComponent = () => {
       <div className="top-bar">
         <p>Where Luxury Meets Nature !</p>
         <div className="social-icons ">
-           <a
-              href="https://www.instagram.com/kale5237?igsh=YzljYTk1ODg3Zg=="
-              target="_blank"
-            >
-              <img width="30" height="30"
-                src="https://img.icons8.com/fluency/48/instagram-new.png"
-                alt="Instagram"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/neha-kale-435a67367?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
-              target="_blank"
-            >
-              <img  width="30" height="30"
-                src="https://img.icons8.com/color/48/linkedin.png"
-                alt="LinkedIn"
-              />
-            </a>
-            <a
-              href="https://www.facebook.com/share/p/1Fi6uoGneg/"
-              target="_blank"
-            >
-              <img width="30" height="30"
-                src="https://img.icons8.com/color/48/facebook-new.png"
-                alt="Facebook"
-              />
-            </a>
-            </div>
-
+          <a
+            href="https://www.instagram.com/kale5237?igsh=YzljYTk1ODg3Zg=="
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/fluency/48/instagram-new.png"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/neha-kale-435a67367?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/color/48/linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/share/p/1Fi6uoGneg/"
+            target="_blank"
+          >
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/color/48/facebook-new.png"
+              alt="Facebook"
+            />
+          </a>
+        </div>
       </div>
 
       {/* ===== MAIN NAV ===== */}
       <nav className="main-nav">
         {/* LOGO */}
         <div className="nav-brand">
-          <img
-            src={venuLogo}
-            alt="VENUVASTRA"
-            className="logo"
-          />
+          <img src={venuLogo} alt="VENUVASTRA" className="logo" />
           <span className="brand-text">VENUVASTRA</span>
         </div>
 
@@ -164,32 +164,39 @@ const NavbarComponent = () => {
             </Link>
           </li>
 
-              {/* ===== MOBILE CONTACT ONLY ===== */}
-<li className="mobile-contact">
-  <div className="contact-item">
-    <i className="ri-phone-line"></i>
-    <span>+91 9156194055</span>
-  </div>
-  <div className="contact-item">
-    <i className="ri-phone-line"></i>
-    <span>+91 9881719988</span>
-  </div>
-  <div className="contact-item">
-    <i className="ri-mail-fill"></i>
-    <span>venuvastra@gmail.com</span>
-  </div>
-</li>
-
+          {/* ===== MOBILE CONTACT ONLY ===== */}
+          <li className="mobile-contact">
+            <div className="contact-item">
+              <i className="ri-phone-line"></i>
+              <span>+91 9156194055</span>
+            </div>
+            <div className="contact-item">
+              <i className="ri-phone-line"></i>
+              <span>+91 9881719988</span>
+            </div>
+            <div className="contact-item">
+              <i className="ri-mail-fill"></i>
+              <span>venuvastra@gmail.com</span>
+            </div>
+          </li>
         </ul>
         {/* CONTACT */}
         <div className="nav-contact">
           <div className="contact-item">
-           <i className="ri-phone-line"><span>+91 9156194055</span></i> 
+            <i className="ri-phone-line">
+              <span>+91 9156194055</span>
+            </i>
             <br />
-           <i className="ri-phone-line"> <span>+91 9881719988</span></i> 
+            <i className="ri-phone-line">
+              {" "}
+              <span>+91 9881719988</span>
+            </i>
           </div>
           <div className="contact-item">
-           <i className="ri-mail-fill"> <span>venuvastra@gmail.com</span></i>
+            <i className="ri-mail-fill">
+              {" "}
+              <span>venuvastra@gmail.com</span>
+            </i>
           </div>
         </div>
       </nav>

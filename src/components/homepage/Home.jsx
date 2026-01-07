@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-// import heroVideo from "/src/assets/images/HomeImages/hero-video.mp4";
+
 import hand from "../../assets/images/Footer/Hand.png";
 import bedsheet from "../../assets/images/Footer/bedsheet.jpg";
 import comforters from "../../assets/images/blogimages/comforters.jpg";
@@ -55,9 +55,6 @@ function Home() {
     <>
       {/* Hero Section */}
       <div className="hero-section">
-        {/* <video autoPlay muted loop playsInline className="hero-video">
-          <source src={heroVideo} type="video/mp4" />
-        </video> */}
         <img
           src={bg}
           alt=""
@@ -68,14 +65,14 @@ function Home() {
             position: "cover",
           }}
         />
-        {/* ===== HERO TEXT CARD (on video) ===== */}
+        {/* ===== HERO TEXT on the image===== */}
         <div className="hero-card reveal">
           <div className="hero-card-content">
             <h2 className="hero-card-title">Where Luxury Meets Nature</h2>
             <p className="hero-card-subtitle">
               Experience premium quality textiles inspired by nature’s finest.
             </p>
-            {/* <a href="/blog"><button className="hero-card-btn">Learn More</button></a>  */}
+        
             <NavLink to="/blog">
               <button className="hero-card-btn">Learn More</button>
             </NavLink>

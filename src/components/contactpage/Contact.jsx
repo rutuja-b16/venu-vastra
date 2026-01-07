@@ -1,5 +1,4 @@
 
-
 import React, { useState } from "react";
 import axios from "axios";
 import "./Contact.css";
@@ -151,10 +150,10 @@ function Contact() {
               </span>
             </div>
             <div className="info-item">
-              <span>+91 9156194055</span>
+              <span>+91 9156194055</span><br /><span>+91 9881719988</span>
             </div>
             <div className="info-item">
-              <span>akulenterprisesindia@gmail.com</span>
+              <span>venuvastra@gmail.com</span>
             </div>
           </div>
         </div>

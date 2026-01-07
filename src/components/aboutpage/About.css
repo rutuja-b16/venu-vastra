@@ -38,14 +38,7 @@
   max-width: 600px;
 }
 
-/* OVERVIEW */
-/* .about-overview {
-  display: flex;
-  gap: 40px;
-  padding: 80px 10%;
-  align-items: center;
-  background: #f8f9f6;
-} */
+
 
 .about-overview {
   display: grid;
@@ -56,10 +49,7 @@
   background-color: #fafaf6;
 }
 
-/* 
-.overview-text {
-  flex: 1;
-} */
+
 
 .overview-text {
   display: flex;
@@ -68,11 +58,6 @@
   animation: slideFadeLeft 1.2s ease-in-out;
 }
 
-/* .overview-text h2 {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-  color: #2e5d42;
-} */
 
 .overview-text h2 {
   font-size: 2.8rem;
@@ -90,11 +75,7 @@
   margin-top: 12px;
 }
 
-/* .overview-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #555;
-} */
+
 .overview-text p {
   font-size: 1.05rem;
   line-height: 1.8;
@@ -103,20 +84,13 @@
 }
 
 
-/* .overview-image {
-  flex: 1;
-  max-width: 300px;
-} */
+
 
 .overview-image {
   animation: slideFadeRight 1.2s ease-in-out;
 }
 
-/* .overview-image img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.4s ease;
-} */
+
 
 .overview-image img {
   width: 100%;

@@ -6,7 +6,6 @@ import bambooHero from "../../assets/images/blogimages/bamboo.jpg";
 
 /* EXISTING IMAGES */
 import hand from "../../assets/images/Footer/Hand.png";
-import bambootowel from "../../assets/images/blogimages/bambootowel.jpg";
 import comforters from "../../assets/images/blogimages/comforters.jpg";
 import bath from "../../assets/images/Footer/bath.jpg";
 import bedsheet from "../../assets/images/Footer/bedsheet.jpg";
@@ -16,6 +15,45 @@ import terrytowel from "../../assets/images/blogimages/terrytowel.jpg";
 
 const sections = [
   {
+
+    
+    title: "Bamboo Towels",
+    text: `The Venuvastra Bamboo Towel is designed to deliver a perfect balance of luxury,
+     performance, and sustainability. Made from premium bamboo fibers, it offers an exceptionally 
+     soft and smooth touch that feels gentle on the skin, making it ideal for everyday use and suitable
+      for sensitive skin types. The naturally high absorbency of bamboo allows the towel to soak up moisture 
+      efficiently while drying faster than conventional cotton towels, helping to maintain freshness and hygiene.`,
+    img:  bambooterrrytowel,
+    reverse: true,
+  },
+
+  {
+    title: "100% Cotton Bath Towels",
+    text: `Experience refined comfort and sustainable luxury with 100% Cotton Bath Towels by
+     Venuvastra, thoughtfully crafted for those who value softness, performance, and eco-conscious living.
+     Naturally more absorbent than conventional cotton, Venuvastra bamboo towels efficiently soak up moisture while remaining 
+     lightweight and quick-drying, helping maintain freshness and hygiene after every use.
+      The inherent antibacterial and odor-resistant propertiesof bamboo keep the towels 
+      cleaner for longer, making them a perfect choice for homes, hotels, spas, and wellness spaces.`,
+    img: bath,
+    reverse: false,
+  },
+
+ {
+    title: "  Bamboo Non-Terry Towels",
+    text: `✓ Luxury Branding Tone
+
+Indulge in refined comfort with our Bamboo Non-Terry Bath Towel, crafted for those who value elegance, 
+sustainability, and performance. Its silky-smooth texture, lightweight feel, and superior absorbency create a 
+spa-like experience while remaining gentle on the skin. Designed for modern luxury living,
+ this towel blends eco-conscious craftsmanship with timeless sophistication.`,
+    img: terrytowel,
+    reverse: true,
+  },
+
+
+  {
+
     title: "Hand Towels",
     text: `Hand towels may seem like a small textile product, but they play a major role in hygiene, 
     comfort, and brand impression. From homes and hotels to hospitals, offices, and international
@@ -32,16 +70,7 @@ In hospitality and healthcare sectors, hand towel quality directly impacts brand
     img: hand,
     reverse: false,
   },
-  {
-    title: "Bamboo Towels",
-    text: `The Venuvastra Bamboo Towel is designed to deliver a perfect balance of luxury,
-     performance, and sustainability. Made from premium bamboo fibers, it offers an exceptionally 
-     soft and smooth touch that feels gentle on the skin, making it ideal for everyday use and suitable
-      for sensitive skin types. The naturally high absorbency of bamboo allows the towel to soak up moisture 
-      efficiently while drying faster than conventional cotton towels, helping to maintain freshness and hygiene.`,
-    img: bambootowel,
-    reverse: true,
-  },
+  
   {
     title: "comforters",
     text: `Comforters: The Perfect Blend of Warmth, Comfort & Luxury
@@ -52,19 +81,12 @@ A comforter is more than just bedding—it plays a crucial role in providing war
 and adding elegance to any bedroom. At VenuVasta, we manufacture and
  supply premium comforters designed to meet the needs of homes, hotels, resorts, hospitals, and export markets.`,
     img: comforters,
-    reverse: false,
-  },
-  {
-    title: "100% Cotton Bath Towels",
-    text: `Experience refined comfort and sustainable luxury with 100% Cotton Bath Towels by
-     Venuvastra, thoughtfully crafted for those who value softness, performance, and eco-conscious living.
-     Naturally more absorbent than conventional cotton, Venuvastra bamboo towels efficiently soak up moisture while remaining 
-     lightweight and quick-drying, helping maintain freshness and hygiene after every use.
-      The inherent antibacterial and odor-resistant propertiesof bamboo keep the towels 
-      cleaner for longer, making them a perfect choice for homes, hotels, spas, and wellness spaces.`,
-    img: bath,
     reverse: true,
   },
+
+
+
+
   {
     title: "Bedsheet",
     text: `Premium Bedsheets by Venuvastra — Comfort Woven to Perfection
@@ -91,31 +113,8 @@ refined weaving, and long-lasting comfort, making them ideal for homes, hotels, 
     reverse: true,
   },
 
-  {
-    title: "Bamboo Terry Towels",
-    text: `Our Comfort & Eco-Friendly Bamboo Bath Terry Towel is
-      specially developed to meet hotel and export-quality standards.
-      Manufactured using premium bamboo terry yarn, it delivers exceptional 
-      softness, high absorbency, and quick drying performance.Bamboo’s
-      natural antibacterial and odor-resistant properties ensure superior
-      hygiene, making it ideal for hotels, resorts, spas, wellness centers, 
-      and premium hospitality projects. The towel maintains softness and 
-      color even after repeated industrial washing.
-      Eco-conscious production makes it a sustainable choice for global markets.`,
-    img: bambooterrrytowel,
-    reverse: false,
-  },
-  {
-    title: "Non-Terry Towels",
-    text: `✓ Luxury Branding Tone
 
-Indulge in refined comfort with our Bamboo Non-Terry Bath Towel, crafted for those who value elegance, 
-sustainability, and performance. Its silky-smooth texture, lightweight feel, and superior absorbency create a 
-spa-like experience while remaining gentle on the skin. Designed for modern luxury living,
- this towel blends eco-conscious craftsmanship with timeless sophistication.`,
-    img: terrytowel,
-    reverse: true,
-  },
+ 
 ];
 
 const Blog = () => {
